@@ -1,10 +1,12 @@
 # sunshine
 
-TODO: Write a description here
+SunVox C Bindings!
 
 ## Installation
 
-TODO: Write installation instructions here
+Run `rsrc/install.sh` to install sunvox library.
+
+Then run `shards build main && ./bin/main` to run
 
 ## Usage
 

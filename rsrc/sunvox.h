@@ -47,7 +47,12 @@ typedef struct
 #define SV_STYPE_FLOAT32 2
 #define SV_STYPE_FLOAT64 3
 
-#define SV_GET_MODULE_XY( in_xy, out_x, out_y ) out_x = in_xy & 0xFFFF; if( out_x & 0x8000 ) out_x -= 0x10000; out_y = ( in_xy >> 16 ) & 0xFFFF; if( out_y & 0x8000 ) out_y -= 0x10000;
+#define SV_GET_MODULE_XY( in_xy, out_x, out_y ) 
+   out_x = in_xy & 0xFFFF; 
+   if( out_x & 0x8000 ) 
+     out_x -= 0x10000; 
+   out_y = ( in_xy >> 16 ) & 0xFFFF; 
+   if( out_y & 0x8000 ) out_y -= 0x10000;
 
 #if defined(_WIN32) || defined(_WIN32_WCE) || defined(__WIN32__) || defined(_WIN64)
     #define WIN
