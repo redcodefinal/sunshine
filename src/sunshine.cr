@@ -2,7 +2,7 @@ require "./sunvox"
 
 SunVox.init("", 44100, 2, 0)
 SunVox.open_slot(0)
-SunVox.load(0, "./rsrc/test.sunvox")
+SunVox.load(0, "./rsrc/test3.sunvox")
 puts "SONG NAME: #{String.new SunVox.get_song_name 0}"
 mm = SunVox.get_number_of_modules(0)
 puts "MODULES COUNT: #{mm}"
@@ -17,9 +17,9 @@ mm.times do |i|
   puts "Module##{i}: #{String.new SunVox.get_module_name(0, i)} x=#{x} y=#{y}"
 end
 
-SunVox.send_event(0, 0, 64, 129, 7, 0, 0)
+SunVox.send_event(0, 0, 64, 129, 5, 0, 0)
 sleep 1
-SunVox.send_event(0, 0, 64, 129, 7, 0, 0)
+SunVox.send_event(0, 0, 64, 129, 5, 0, 0)
 sleep 1
 
 SunVox.play_from_beginning(0)

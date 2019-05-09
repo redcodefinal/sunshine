@@ -11,7 +11,7 @@ Then run `shards build main && ./bin/main` to run a test
 ## Usage Example
 
 ```crystal
-require "./sunvox"
+require "sunshine"
 
 SunVox.init("", 44100, 2, 0)
 SunVox.open_slot(0)
