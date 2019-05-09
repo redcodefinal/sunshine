@@ -1,7 +1,6 @@
 require "./sunvox"
 
-config : UInt8 = 0.to_u8
-SunVox.init(pointerof(config), 44100, 2, 0)
+SunVox.init("", 44100, 2, 0)
 SunVox.open_slot(0)
 SunVox.load(0, "./rsrc/test.sunvox")
 puts "SONG NAME: #{String.new SunVox.get_song_name 0}"
