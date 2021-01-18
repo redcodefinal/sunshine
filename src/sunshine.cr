@@ -11,9 +11,9 @@ mm.times do |i|
   next if (flags & SunVox::MODULE_FLAG_EXISTS).zero?
   xy = SunVox.get_module_xy(0, i)
   x = xy & 0xFFFF
-  x -= 0x10000 if (x & 0x8000) != 0
+  x &-= 0x10000 if (x & 0x8000) != 0
   y = (xy >> 16) & 0xFFFF
-  y -= 0x10000 if (y & 0x8000) != 0
+  y &-= 0x10000 if (y & 0x8000) != 0
   puts "Module##{i}: #{String.new SunVox.get_module_name(0, i)} x=#{x} y=#{y}"
 end
 

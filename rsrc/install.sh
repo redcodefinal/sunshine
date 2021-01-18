@@ -1,2 +1,2 @@
 #! /bin/sh
-sudo cp ./sunvox.so /usr/local/lib/sunvox.so
+sudo cp ./sunvox.so /usr/lib/sunvox.so
