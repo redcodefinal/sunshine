@@ -1,5 +1,5 @@
 #@[Include("/home/ian/Documents/crystal/sunshine/src/sunvox.h", prefix: %w(SV_ sv_))]
-@[Link(ldflags: "/usr/lib/sunvox.so")]
+@[Link(ldflags: "/usr/local/lib/sunvox.so")]
 
 lib SunVox
   MODULE_FLAG_EXISTS = 1

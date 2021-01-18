@@ -6,7 +6,7 @@ authors:
 
 targets:
   main:
-    main: src/sunshine.cr
+    main: src/example.cr
 
 crystal: 0.28.0
 
